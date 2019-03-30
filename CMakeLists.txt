@@ -3,5 +3,4 @@ project(dsa)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(dsa
-        src/cpt1/hailstone.cpp src/Vector/Vector.h)
+add_executable(dsa src/Vector/main.cpp src/_shared/Fib.h src/Vector/vector.h)

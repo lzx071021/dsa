@@ -9,6 +9,12 @@
 
 template<typename T>
 static Rank binSearch(T *A, const T &e, Rank lo, Rank hi) {
-    // TODO
+    while (lo < hi) {
+        Rank mi = (hi + lo) >> 1;
+        if (e < A[mi]) hi = mi;
+        else if (e > A[mi]) lo = mi + 1;
+        else return mi;
+    }
+    return -1;
 }
 #endif //DSA_BINSEARCH_H
