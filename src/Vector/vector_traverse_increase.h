@@ -5,7 +5,7 @@
 #ifndef DSA_INCREASE_H
 #define DSA_INCREASE_H
 
-#include "../Vector/vector.h"
+#include "vector.h"
 
 template <typename T>
 struct Increase {
